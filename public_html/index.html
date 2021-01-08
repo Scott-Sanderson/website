@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Sanderson IP Law, Ltd.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fa-brands.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	  * {
+		  box-sizing: border-box;
+	  }
+	  
+	  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      /* color: #818181; */
+	  color: #fff;
+  }
+  /* h2 {
+      font-size: 34px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h3 {
+	  font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 30px;
+	  margin-left: auto;
+	  text-align: center;
+	  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  h5 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      margin-bottom: 30px;
+      text-align: center;
+	  display: table-cell;
+      vertical-align: middle;
+  } */
+	  
+  
+	  h1 {
+		  color: black;
+		  text-align: center;
+	  }
+	  h2{
+		  color: white;
+		  text-align: center;
+	  }
+	  
+	  p {
+		  font-size: 20px;
+		  line-height: 30px;
+		  text-align: left;
+		  margin-top: 70px;
+		  margin: 70px;
+  }
+  .container-fluid {
+      /* padding: 60px 50px; */
+  }
+  .jumbotron {
+	  background-image: url(images/moonrockets/earthrise_crop3.jpg);
+	  background-size: cover;
+	  ppadding: 300px 125px;
+      padding-top: 300px;
+      padding-right: 125px;
+      padding-bottom: 100px;
+      padding-left: 125px;
+      font-family: Montserrat, sans-serif;
+	  text-align: center;
+  }
+	  
+  .jumbotron p {text-align: center;
+	  margin-top: 10px;
+  }
+  .bg-dark-grey {
+      background-color: #2b2b3c;
+  }
+  .bg-light-grey {
+	  background-color: #3d414d;
+  }
+  .bg-white {
+	  background-color: white;
+  }
+  .image {
+	  background-size: cover;
+	  background-position: center;
+  }
+  .moonpics {
+      padding: 0 0 0 0;
+	  border: none;
+  }
+  .moonpics img {
+	   max-height: 100%;
+	   max-width: 100%;
+  }
+  .bio img {
+		 align-content: center;
+	  }
+  .bio h3 {
+		  text-align: center;
+	  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f662D91;
+  }
+  .carousel-indicators li {
+      border-color: #EDED0F;
+  }
+  .carousel-indicators li.active {
+      background-color: #662D91;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #3542E4; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #662D91;
+      background-color: #8E8E8E !important;
+      color: #662D91;
+  }
+  .panel-heading {
+      color: #FFFFFF !important;
+      background-color: #2BAD11 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #662D91;
+      color: #fff;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: transparent;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #1A2020 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer {
+		  color: black;
+	  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #662D91;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+ 
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#firm">FIRM</a></li>
+        <li><a href="#patents">SERVICES</a></li>
+        <li><a href="#attorneys">ATTORNEYS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Sanderson IP Law, Ltd.</h1> 
+  <p>Patent & Trademark Counsel</p> 
+</div>
+	
+<div class="container-fluid">
+	<div class="row">
+      <div class="col-xl-12"><h1>Areas of Technical Specialization</h1>
+      </div>
+    </div>
+</div>
+<br>
+
+<!-- Container (About Section) -->
+<div id="firm" class="container-fluid bg-dark-grey">
+  <div class="row">
+    <div class="col-sm-8">
+    	<p> The firm devotes substantial time to study and experimentation in technical areas including peer-to-peer networks, privacy and payments technologies, computer network security, crypography, and more.&nbsp; &nbsp; &nbsp;&nbsp;</p>
+    </div>
+	<div class="col-sm-4 moonpics">
+       <img src="images/moonrockets/splashdown_crop.jpg" alt=""/></div>
+  </div>
+</div>
+
+	
+<div id="patents" class="container-fluid bg-light-grey slideanim">
+	<div class="row">
+	  <div class="col-sm-5 moonpics"> 
+		  <img src="images/moonrockets/liftoff2_crop.jpg" alt=""/></div>
+      <div class="col-sm-7">
+		  <h2>Patents</h2>
+			<p>The firm specializes in U.S. patent law and the drafting and prosecution of patent applications at the U.S. Patent and Trademark Office. In addition, we offer patent legal services including prior art searches and analysis, competitor patent portfolio research, legal opinions on the infringement, validity, infringement, or enforceability of patents, domestic and foreign patent legal strategy advising, and patent post-grant proceedings. The firm has prepared and prosecuted dozens of patent applications at the United States Patent and Trademark Office and has handled foreign patent filings and examinations in patent offices around the world.</p>
+		</div>
+	</div>
+</div>
+	
+<div id="trademarks" class="container-fluid bg-dark-grey slideanim">
+  <div class="row">
+    <div class="col-sm-4">
+		<h2>Trademarks</h2>
+      <p>The firm provides trademark services including filing trademark applications at the U.S. Patent and Trademark office, advising on state and federal trademark law, trademark search, trademark watch services, and legal opinions on the strength of trademarks.</p>
+    </div>
+	<div class="col-sm-8 moonpics">
+       <img src="images/moonrockets/LEO2_crop.jpg" alt=""/></div>
+  </div>
+</div>
+	
+	
+<div class="container-fluid">
+	<div class="row">
+      <div id="attorneys" class="col-xl-12"><h1>Attorneys</h1></div>
+    </div>
+</div>
+	
+<div class="container-fluid bg-light-grey slideanim">
+	<div class="row">
+      <div class="col-sm-4 bio">
+		<h2>Scott Sanderson</h2>
+		  <h4>Founder/Patent Attorney</h4>
+		  (720) 507-1425 - <a href="mailto:scott@sandersoniplaw.com">Email</a> - <a href="https://www.linkedin.com/in/scott-sanderson-6ba7a93/">LinkedIn</a> - <a href="https://twitter.com/San_person">Twitter</a> <br>
+	    <img src="images/Sanderson_33236_030_675.jpg" width="250" height="250" alt="" align="middle"/> 
+		  <h4>Education</h4>
+	    <ul><li>J.D., Northwestern University, 2006</li>
+			<li>A.B., Matematics, College of the Holy Cross, 2000</li>
+	</ul>
+	<h4>Bar Admissions and Registrations to Practice</h4>
+	<ul><li>United States Patent and Trademark Office (2010)</li>
+	<li>Colorado (2015)</li>
+	<li>Illinois (2006) (retired)</li>
+	<li>United States Court of Appeals for the Federal Circuit (2011)</li></ul>
+	
+	<h4>Professional Organizations</h4>
+	<ul><li>Colorado IP American Inn of Court, member</li>
+	<li>EthDenver and Rocky Mountain Blockchain meetups</li>
+	</ul>
+		  
+		</div>
+	  <div class="col-sm-8">
+		<p>Scott has been specializing in patent and IP law since law school. Scott has over a decade of experience at a large IP specialty law firm in Chicago including years at a patent litigator before shifting focus to patent prosecution. Scott has served clients in the past in technical areas including hard drives, breed-and-burn nuclear reactors, a national pharmacy chain, a major US tech company, e-commerce retailers, and a regional internet service provider.</p>
+		<p>Before legal education, Scott was a graphics engineer at ATI Research (now AMD, Inc.) supporting teams implementing graphics APIs on the Radeon graphics card hardware and GPUs. Scott's undergradute degree is in Mathematics, with a focus on geometry and computer science.</p>
+		</div>
+    </div>
+	   
+</div>
+	
+<div class="container-fluid">
+	<div class="row">
+      <div class="col-xl-12"><h1>CONTACT</h1></div>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-dark-grey slideanim">
+
+  <div class="row">
+    <div class="col-sm-7 bg-white">
+	  <img src="images/SandersonIPLaw_logo.svg" alt=""/> </div>
+	<div class="col-sm-5">
+      <p>Please reach out to discuss working together or if you want to talk about your project!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Denver Colorado</p>
+		<p><span class="fa fa-twitter"></span> Twitter: @San_person</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> scott@SandersonIPLaw.com</p>
+    </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>The photos used on this website were taken by and of the astronauts of the Apollo space program. All photos are in the public domain. Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
